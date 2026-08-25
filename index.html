@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Thumbnail Downloader — Download HD Thumbnails</title>
+  <meta name="description" content="Download YouTube thumbnails in high quality from any video link. Use this fast YouTube thumbnail downloader online to save HD thumbnail images.">
+  <meta property="og:title" content="YouTube Thumbnail Downloader">
+  <meta property="og:description" content="Download YouTube video thumbnails in high quality with just a video link.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#dc2626">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="YouTube Thumbnail Downloader home">
+        <span class="brand-mark" aria-hidden="true">▶</span>
+        <span>YouTube Thumbnail Downloader</span>
+      </a>
+      <a class="header-link" href="#how-it-works">How it works</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-content">
+        <p class="eyebrow">Fast, free, and simple</p>
+        <h1 id="page-title">Download YouTube thumbnails</h1>
+        <p class="intro">Download YouTube video thumbnails in high quality with just a video link.</p>
+
+        <form id="thumbnail-form" class="downloader-form" novalidate>
+          <label class="sr-only" for="youtube-url">YouTube video URL</label>
+          <div class="input-row">
+            <input id="youtube-url" name="youtube-url" type="url" inputmode="url" autocomplete="url" placeholder="Paste a YouTube video link" aria-describedby="form-message" required>
+            <button id="submit-button" class="button button-primary" type="submit">
+              <span class="button-label">Get Thumbnails</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="form-bottom">
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+            <button id="clear-button" class="clear-button" type="button" hidden>Clear</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="results" class="results-section" aria-labelledby="results-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your images</p>
+            <h2 id="results-title">Thumbnail options</h2>
+          </div>
+          <p id="video-id-display" class="video-id" hidden></p>
+        </div>
+        <div id="empty-state" class="empty-state">
+          <span class="empty-icon" aria-hidden="true">▧</span>
+          <p>Paste a YouTube video URL above to see available thumbnail sizes.</p>
+        </div>
+        <div id="thumbnail-grid" class="thumbnail-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="info-section" aria-labelledby="info-title">
+      <div class="container info-layout">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2 id="info-title">Save a YouTube thumbnail image in seconds.</h2>
+        </div>
+        <ol class="steps-list">
+          <li><span>1</span>Copy the link to any YouTube video, Short, or embed.</li>
+          <li><span>2</span>Paste it above and select <strong>Get Thumbnails</strong>.</li>
+          <li><span>3</span>Choose a quality, then download YouTube thumbnail image or copy its URL.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>Made for quick, high-quality YouTube thumbnail downloads.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
